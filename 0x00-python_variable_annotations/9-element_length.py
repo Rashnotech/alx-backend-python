@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ a module that takes in list and return value"""
 from typing import Tuple, List, Iterable, Sequence
 

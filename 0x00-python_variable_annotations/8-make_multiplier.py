@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ a module that takes float and return float"""
 from typing import Callable
 

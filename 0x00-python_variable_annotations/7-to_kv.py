@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ a module that takes a string and returns tuple"""
 from typing import Union, Tuple
 

@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """a module that sum element in list"""
 from typing import Union, List
 
