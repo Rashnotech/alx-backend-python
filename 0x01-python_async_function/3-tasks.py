@@ -2,16 +2,13 @@
 """ a module that wait task random"""
 import asyncio
 import time
-from typing import TypeVar
+from typing import Any
 
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-T = TypeVar('T')
-
-
-def task_wait_random(max_delay: int) -> T:
+def task_wait_random(max_delay: int) -> Any:
     """
     A Function that takes a maximum delay time
     Args:
