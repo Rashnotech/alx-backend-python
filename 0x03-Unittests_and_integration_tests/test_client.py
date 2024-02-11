@@ -79,6 +79,7 @@ class TestGithubOrgClient(unittest.TestCase):
         result = client.has_license(mock_license, mock_key)
         self.assertEqual(result, expected)
 
+
 @parameterized_class([
     {
         'org_payload': TEST_PAYLOAD[0][0],
@@ -113,7 +114,6 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
         """Tear Down"""
         cls.get_patcher.stop()
 
-
     def test_public_repos(self):
         """An integration test"""
         org_client = GithubOrgClient('google')
@@ -121,14 +121,12 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
 
         self.assertEqual(result, self.expected_repos)
 
-
     def test_public_repos_with_license(self):
         # Create an instance of GithubOrgClient
         org_client = GithubOrgClient('google')
         result = org_client.public_repos(license='apache-2.0')
 
         self.assertEqual(result, self.apache2_repos)
-
 
 
 if __name__ == '__main__':
